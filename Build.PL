@@ -17,13 +17,14 @@ my %module_build_args = (
     'Steven Haryanto <stevenharyanto@gmail.com>'
   ],
   'dist_name' => 'Sub-Spec-To-HTML',
-  'dist_version' => '0.00',
+  'dist_version' => '0.001',
   'license' => 'perl',
   'module_name' => 'Sub::Spec::To::HTML',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
     'Data::Dump::Partial' => '0',
+    'Data::Sah::Util' => '0',
     'HTML::Entities' => '0',
     'List::MoreUtils' => '0',
     'Log::Any' => '0',

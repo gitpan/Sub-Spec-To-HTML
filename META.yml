@@ -15,7 +15,7 @@ meta-spec:
 name: Sub-Spec-To-HTML
 requires:
   Data::Dump::Partial: 0
-  Data::Sah::Util: 0
+  Data::Sah: 0
   HTML::Entities: 0
   List::MoreUtils: 0
   Log::Any: 0
@@ -24,4 +24,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Sub-Spec-To-HTML/
   repository: http://github.com/sharyanto/perl-Sub-Spec-To-HTML
-version: 0.001
+version: 0.002

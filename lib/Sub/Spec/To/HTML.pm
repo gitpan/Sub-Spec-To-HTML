@@ -1,6 +1,6 @@
 package Sub::Spec::To::HTML;
 BEGIN {
-  $Sub::Spec::To::HTML::VERSION = '0.001';
+  $Sub::Spec::To::HTML::VERSION = '0.002';
 }
 
 use 5.010;
@@ -8,7 +8,7 @@ use strict;
 use warnings;
 use Log::Any '$log';
 
-use Data::Sah::Util;
+use Data::Sah;
 
 require Exporter;
 our @ISA       = qw(Exporter);
@@ -19,7 +19,7 @@ our @EXPORT_OK = qw(spec_to_html);
 our %SPEC;
 
 sub _parse_schema {
-    Data::Sah::Util::_parse_schema(@_);
+    Data::Sah::normalize_schema($_[0]);
 }
 
 $SPEC{spec_to_html} = {
@@ -63,7 +63,7 @@ Sub::Spec::To::HTML - Generate HTML documentation from sub spec
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

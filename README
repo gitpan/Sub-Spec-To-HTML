@@ -2,7 +2,7 @@ NAME
     Sub::Spec::To::HTML - Generate HTML documentation from sub spec
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
      use Sub::Spec::To::HTML qw(spec_to_html);

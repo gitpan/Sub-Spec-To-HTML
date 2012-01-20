@@ -1,6 +1,6 @@
 package Sub::Spec::To::HTML;
-BEGIN {
-  $Sub::Spec::To::HTML::VERSION = '0.002';
+{
+  $Sub::Spec::To::HTML::VERSION = '0.003';
 }
 
 use 5.010;
@@ -63,7 +63,7 @@ Sub::Spec::To::HTML - Generate HTML documentation from sub spec
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -169,7 +169,7 @@ _
                 $prev_cat = $cat;
             }
 
-            $pod .= "=item * B<$name>".($ah0->{required} ? "*" : "")." => ";
+            $pod .= "=item * B<$name>".($ah0->{req} ? "*" : "")." => ";
             my $type;
             if ($arg->{type} eq 'any') {
                 my @schemas = map {_parse_schema($_)} @{$ah0->{of}};
@@ -255,7 +255,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Steven Haryanto.
+This software is copyright (c) 2012 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
